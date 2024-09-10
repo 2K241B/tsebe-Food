@@ -1,17 +1,17 @@
-import { Footer } from '@/components/Footer'
-import { Navbar } from '@/components/Navbar'
-// import { SignIn } from '@/components/SignIn'
-// import { SignUp } from '@/components/SignUp'
-import React from 'react'
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
+
+import React from "react";
+import Signup from "./Signup";
 
 const Signin = () => {
   return (
-        <div>
-            <Navbar/>
-        {/* <SignIn/> */}
-        <Footer/>
-        </div>
-  )
-}
+    <div>
+      <Navbar />
+      <Signup />
+      <Footer />
+    </div>
+  );
+};
 
-export default Signin
+export default Signin;
