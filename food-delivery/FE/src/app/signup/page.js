@@ -1,9 +1,12 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { SvgCheck } from "@/components/ui/assets/Svgs";
+import { Checkbox } from "@/components/ui/checkbox";
+
+
 const Signup = () => {
   return (
-    <div className="flex w-[448px] p-8 flex-col justify-center items-center gap-12">
+   <div className="flex flex-col items-center">
+     <div className="flex w-[448px] p-8 flex-col justify-center items-center gap-12">
       <p className="w-[384px] text-center text-3xl font-bold text-[#0D1118;]">
         Бүртгүүлэх
       </p>
@@ -31,9 +34,7 @@ const Signup = () => {
       </div>
       <div className="flex flex-col items-center gap-8">
         <div className="flex px-2 py-4 justify-center items-center gap-2 self-stretch">
-          <Button>
-            <SvgCheck />
-          </Button>
+         <Checkbox/>
           <p>Үйлчилгээний нөхцөл зөвшөөрөх</p>
         </div>
         <Button className="w-full text-black bg-white border-solid border-[1px] border-[#18BA51]">
@@ -41,6 +42,7 @@ const Signup = () => {
         </Button>
       </div>
     </div>
+   </div>
   );
 };
 export default Signup
